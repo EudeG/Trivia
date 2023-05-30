@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Country Flags</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="flex">
+  
+  <!--pantalla inicial-->
+  <div class="pantalla-inicial" id="pantalla-inicial">
+    <h1 class="quiz-titles">Fun With Flags</h1>
+    <div>
+      <p class="quiz-text">¿Qué tanto sabes sobre banderas? <br> retate en la trivia de fun with Flags.</p>
+    </div>
+    <button class="boton-inicio" onclick="comenzarJuego()">empezar a jugar!</button>
+  </div>
+
+<!-- pantalla de continentes
+ya no se si habra pantalla de contienentes
+<div id="selector-continente" class="selector-contienente">
+  <div class="estilos-contienente">
+    <h2 class="quiz-subtitles">Elige un continente</h2>
+    <button>America</button>
+    <button>Europa</button>
+    <button>Asia</button>
+    <button>Africa y Oceanía</button>
+  </div>
+</div>  -->
+
+
+  
+  <!-- conteiner -->
+<div class="pantalla-juego" id="pantalla-juego">
+  <div class="conteiner-juego">
+    <h2 class="quiz-subtitles">¿A que país pertence esta Bandera?</h2>
+    <img src="imagenes/bolivia.png" alt="bandera de bolivia"  id="imgBandera">
+    
+    <div class="opciones">
+      <div class="opcion">
+        <button class="boton" id="op0" >opcion 1</button>
+      </div>
+      
+      <div class="opcion">
+        <button class="boton" id="op1" >opcion 2</button>
+      </div>
+
+      <div class="opcion">
+        <button class="boton" id="op2" >opcion 3</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<!-- pantalla final -->
+<div id="pantalla-final" class="pantalla-final">
+  <div class="final">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="quiz-subtitles">CORRECTO: <span id="numCorrectas">6</span></h2>
+    <h2 class="quiz-subtitles">INCORRECTO: <span id="numIncorrectas">4</span></h2>
+    <button class="boton-final" id="ini" onclick="volverInicio()">volver a inicio</button>
+  </div>
+</div>
+
+<footer> Desarrollado por alumnas de Crack the Code</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
+<!-- 
+let pregunta = documnet.querySelector("p")
+pregunta.appendChild(image1); -->
+
